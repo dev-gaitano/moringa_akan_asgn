@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container_root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh; /* Full viewport height */
+}
+.container_namegen_root {
+  /* border: 1px solid red; */
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  height: 380px;
+  border-radius: 24px;
+}
+.container_namegen_root_left {
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 380px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  align-content: center;
+  text-align: center;
+  background-color: #ededed;
+}
+.container_namegen_left_content {
+  /* border: 1px solid red; */
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #171738;
+}
+.container_namegen_left_content_dob {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.container_namegen_left_content_dob form {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+.dob_input_form {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.dob_input_form input {
+  border-radius: 4px;
+  border: 0px;
+  height: 25px;
+  text-align: center;
+}
+.container_namegen_left_content_gender {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.container_namegen_left_content_gender select {
+  border-radius: 4px;
+  border: 0px;
+  width: 180px;
+  height: 25px;
+  padding-left: 10px;
+}
+.container_namegen_left_content_submit button {
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #171738;
+}
+.container_namegen_root_right {
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 380px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  align-content: center;
+  background-color: #171738;
+}
+.container_namegen_right_content {
+  /* border: 1px solid red; */
+  height: 230px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container_namegen_right_content_descript {
+  /* border: 1px solid red; */
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_namegen_right_content_descript p {
+  width: 250px;
+}
