@@ -129,17 +129,20 @@
 }
 .container_namegen_right_content_descript {
   /* border: 1px solid red; */
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-  gap: 14px;
+  margin-top: 10px;
 }
 .container_namegen_right_content_descript p {
   width: 250px;
   font-size: 14px;
+}
+.container_namegen_right_content_descript a {
+  margin-top: 20px;
 }
 .container_namegen_right_content_descript a img {
   width: 26px;
