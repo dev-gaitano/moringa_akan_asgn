@@ -147,6 +147,7 @@
 .container_namegen_right_content_descript a img {
   width: 26px;
   opacity: 0.4;
+  transition: all 0.5s ease 0s;
 }
 .container_namegen_right_content_descript a img:hover {
   width: 27px;
