@@ -1,4 +1,4 @@
-# Akan Name Generator
+![akan_name_gen_banner](./media/images/akan_name_gen_banner.png)
 
 ## Author
 
