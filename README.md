@@ -10,6 +10,12 @@ A web application that generates Akan names based on the user's date of birth an
 Ghana, children are given their first name as a 'day name' which
 corresponds to the day in the week they were born.
 
+## Links
+
+GitHub Pages URL for the site: [Akan Name Generator](https://www.example.com)
+
+Figma Design File: [Figma Akan Name Generator](https://www.figma.com/design/WsYFagd4IREmxIUhyCYCtn/akan_nam_gen?node-id=0-1&t=T2Mvcy5VRRkSJf50-1)
+
 ## Follow these steps to set up the project locally:
 
 ### 1. Clone the Repository:
@@ -46,6 +52,6 @@ Open the `index.html` file in a web browser. No additional installations are req
 
 ## License
 
-Project by Eugene Campbell Gaitano
+Project by Eugene Campbell Gaitano.
 
 This project is licensed under the MIT License.
