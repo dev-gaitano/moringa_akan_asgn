@@ -2,11 +2,31 @@
 
 ## Description
 
-A web application that generates Akan names based on the user's date of birth and gender. Akan names are derived from Ghanaian culture and correspond to the day of the week a person is born.
+A web application that generates Akan names based on the user's date of birth and gender. Akan names are derived from Ghanian culture. Frequently in
+Ghana, children are given their first name as a 'day name' which
+corresponds to the day in the week they were born.
 
-## Installation
+## Follow these steps to set up the project locally:
 
-To run this project, simply open the `index.html` file in a web browser. No additional installations are required.
+### 1. Clone the Repository:
+
+```
+bash
+
+git clone https://github.com/dev-gaitano/moringa_akan_asgn.git
+```
+
+### 2. Navigate to the Project Directory:
+
+```
+bash
+
+cd moringa_akan_asgn
+```
+
+### 3. Open the Project:
+
+Open the `index.html` file in a web browser. No additional installations are required.
 
 ## Usage
 
@@ -22,4 +42,6 @@ To run this project, simply open the `index.html` file in a web browser. No addi
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+Project by Eugene Campbell Gaitano
+
+This project is licensed under the MIT License.
