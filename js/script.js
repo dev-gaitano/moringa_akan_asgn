@@ -19,26 +19,23 @@ const getClientGender = () => {
 };
 
 
-// Return Client input info
-const clientInputInfo = () => {
+// Validate if client DOB is valid - Use JavaScript Operators such as '===' and '<='
+const dobValidator = () => {
     const dob = getClientDob();
-    const gender = getClientGender();
+    
+    if(dob[0] >= 1 && dob[0] <= 31 && dob[1] >= 1 && dob[1] <= 12 && dob[2] >= 1000 && dob[2] <= 3000 ) {
+        const dobIsValid = false;
+    }
+    else {
+        const dobIsValid = true;
+    }
 
-    console.log(dob);
-    console.log(gender);
 }
 
 
 // Listen for submit button - onSubmit , Event Listeners
-const submitForm = document.getElementById('submit_button')
+const submitForm = document.getElementById('submit_button').addEventListener('click', dobValidator)
 
-submitForm.addEventListener('click', clientInputInfo)
-
-
-// Validate if client DOB is valid - Use JavaScript Operators such as '===' and '<='
-    // If dob.day < 1 or > 31 , input invalid
-    // If dob.month < 1 or > 12 , input invalid
-    // If dob.year < 1800 or > 2100 , input invalid
 
 // Calculate DOB's Day Of The Week - Formula in the canva assignment documentation, get as Index
 // Check if the Client is Male or Female and select dict / object  based on gender - if male , else female
