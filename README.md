@@ -1,7 +1,7 @@
 <div align="center">
     <img src="./media/images/akan_name_gen_banner.png" alt="banner_img">
 </div>
-<div align="center"  style="font-size: 24px;">
+<div align="center">
     Author
 </div>
 <div align="center">
