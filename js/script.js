@@ -93,7 +93,7 @@ const clientInfoValidator = () => {
   const genderIsValid = genderValidator();
 
   if (dobIsValid === true && genderIsValid === true) {
-    console.log("Info is Valid");
+    console.log("ERROR: Info is Valid");
     return true;
   } else {
     return false;
@@ -122,13 +122,14 @@ const calculateDayofWeek = () => {
   return Math.floor(((dayOfWeekCalc % 7) + 7) % 7);
 };
 
-// Select the Day of the week equal to our Clients Day of the week in dict - Use index calculated, validate if index is positive using modular operator
+// Return Clients Akan Name
 const genClientAkanName = () => {
   const gender = getClientGender();
   dayOfWeek = calculateDayofWeek();
 
-  // Check if the Client is Male or Female and select dict / object  based on gender - if male , else female
+  // Check if the Client is Male or Female and select array based on gender
   if (gender === "male") {
+    // Returns Akan name based on DOB day of the week
     if (dayOfWeek === 0) {
       return akanNamesMale[0];
     } else if (dayOfWeek === 1) {
@@ -144,7 +145,7 @@ const genClientAkanName = () => {
     } else if (dayOfWeek === 6) {
       return akanNamesMale[6];
     } else {
-      alert("ERROR");
+      console.log("ERROR: Client Info is not valid");
     }
   } else if (gender === "female") {
     if (dayOfWeek === 0) {
@@ -162,14 +163,26 @@ const genClientAkanName = () => {
     } else if (dayOfWeek === 6) {
       return akanNamesFemale[6];
     } else {
-      alert("ERROR");
+      console.log("ERROR: Client Info is not valid");
     }
   }
 };
 
 // Return the corresponding key to the day of the week in the selected dict - Define a function to return the data to the client, the Akan name
+const returnClientAkanName = () => {
+  const clientInfoIsValid = clientInfoValidator();
+
+  if (clientInfoIsValid === true) {
+    calculateDayofWeek();
+    const akanName = genClientAkanName();
+
+    console.log(akanName);
+  } else {
+    console.log("ERROR: Client Info is not valid");
+  }
+};
 
 // Listen for submit button
 const submitForm = document
   .getElementById("submit_button")
-  .addEventListener("click", calculateDayofWeek);
+  .addEventListener("click", returnClientAkanName);
