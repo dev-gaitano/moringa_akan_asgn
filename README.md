@@ -12,8 +12,6 @@
 </div>
 <div align="center" style="margin-top: 8px;">
     <img alt="LinkedIn Badge" src="https://img.shields.io/badge/LinkedIn-blue">
-</div>
-<div align="center" style="margin-top: 8px;">
     <img alt="Email Badge" src="https://img.shields.io/badge/Email-red">
 </div>
 
