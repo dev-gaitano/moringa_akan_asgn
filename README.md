@@ -18,21 +18,21 @@ Figma Design File: [Figma Akan Name Generator](https://www.figma.com/design/WsYF
 
 ## Follow these steps to set up the project locally:
 
-### 1. Clone the Repository:
+#### 1. Clone the Repository:
 
 ```bash
 
 git clone https://github.com/dev-gaitano/moringa_akan_asgn.git
 ```
 
-### 2. Navigate to the Project Directory:
+#### 2. Navigate to the Project Directory:
 
 ```bash
 
 cd moringa_akan_asgn
 ```
 
-### 3. Open the Project:
+#### 3. Open the Project:
 
 Open the `index.html` file in a web browser. No additional installations are required.
 
