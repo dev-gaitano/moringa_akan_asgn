@@ -1,4 +1,7 @@
 // Create Akan name dicts / object for each gender - Day of the week index(key) : Akan name (value)
+const akanNamesMale = ['Kwasi' , 'Kwadwo' , 'Kwabena' , 'Kwaku' , 'Yaw' , 'Kofi' , 'Kwame']
+
+const akanNamesFemale = ['Akosua' , 'Adwoa' , 'Abenaa' , 'Akua' , 'Yaa' , 'Afua' , 'Ama']
 
 
 // Get client DOB from input form
