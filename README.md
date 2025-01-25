@@ -1,21 +1,20 @@
 <div align="center">
     <img src="./media/images/akan_name_gen_banner.png" alt="banner_img">
 </div>
-
-<div align="center">
-    <h2>Author</h2>
+<div align="center"  style="font-size: 24px;">
+    Author
 </div>
 <div align="center">
   Eugene Campbell Gaitano - Fullstack Developer
 </div>
-<div align="center">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
+<div align="center" style="margin-top: 12px;">
+    <img alt="Contact Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
 </div>
-<div align="center">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
+<div align="center" style="margin-top: 8px;">
+    <img alt="LinkedIn Badge" src="https://img.shields.io/badge/LinkedIn-blue">
 </div>
-<div align="center">
-    <img alt="Static Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
+<div align="center" style="margin-top: 8px;">
+    <img alt="Email Badge" src="https://img.shields.io/badge/Email-red">
 </div>
 
 ## Description
