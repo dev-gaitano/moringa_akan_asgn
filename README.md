@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Akan Name Generator</h1>
+    <img src="./media/images/akan_name_gen_banner.png" alt="banner_img">
 </div>
 
 <div align="center">
