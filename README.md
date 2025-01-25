@@ -1,7 +1,8 @@
 # Akan Name Generator
 
-## Author
-
+<div align="center">
+    <h2>Author</h2>
+</div>
 <div align="center">
   Eugene Campbell Gaitano - Fullstack Developer
 </div>
