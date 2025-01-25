@@ -2,7 +2,7 @@
     <img src="./media/images/akan_name_gen_banner.png" alt="banner_img">
 </div>
 <div align="center">
-    Author
+    <h2>Author</h2>
 </div>
 <div align="center">
   Eugene Campbell Gaitano - Fullstack Developer
