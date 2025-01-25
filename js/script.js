@@ -24,11 +24,10 @@ const dobValidator = () => {
     const dob = getClientDob();
     
     if(dob[0] >= 1 && dob[0] <= 31 && dob[1] >= 1 && dob[1] <= 12 && dob[2] >= 1000 && dob[2] <= 3000 ) {
-        const dobIsValid = true;
+        return dobIsValid = true;
     }
     else {
-        const dobIsValid = false;
-        alert('Date of Birth is Not Valid')
+        return dobIsValid = false + alert('Date of Birth is Not Valid');
     }
 
 }
@@ -39,17 +38,29 @@ const genderValidator = () => {
     const dob = getClientGender();
 
     if(gender != null) {
-        genderIsValid = true;
+        return genderIsValid = true;
     }
     else {
-        genderIsValid = false;
-        alert('Gender is Not Valid')
+        return genderIsValid = false + alert('Gender is Not Valid');  
+    }
+}
+
+// Checks if both DOB and Gender are valid
+const clientInfoValidator = () => {
+    dobValidator();
+    genderValidator();
+
+    if(dobIsValid === true && genderIsValid === true) {
+        return infoIsValid = true + console.log('Info is Valid');
+    }
+    else {
+        return infoIsValid = false;
     }
 }
 
 
 // Listen for submit button - onSubmit , Event Listeners
-const submitForm = document.getElementById('submit_button').addEventListener('click', genderValidator)
+const submitForm = document.getElementById('submit_button').addEventListener('click', clientInfoValidator)
 
 
 // Calculate DOB's Day Of The Week - Formula in the canva assignment documentation, get as Index
