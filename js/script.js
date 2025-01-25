@@ -10,7 +10,6 @@ const getClientDob = () => {
     return [day , month , year]
 };
 
-
 // Get Client Gender from input form
 const getClientGender = () => {
     const gender = document.getElementById('gender').value
@@ -24,38 +23,64 @@ const dobValidator = () => {
     const dob = getClientDob();
     
     if(dob[0] >= 1 && dob[0] <= 31 && dob[1] >= 1 && dob[1] <= 12 && dob[2] >= 1000 && dob[2] <= 3000 ) {
-        return dobIsValid = true;
+
+        if ([4, 6, 9, 11].includes(dob[1])) {
+            if (dob[0] >= 1 && dob[0] <= 30) {
+                return true;
+            } else {
+                alert('INVALID: Month selected can\'t have < 1 day or > 30 days');
+                return false;
+            }
+        }
+        else if ([1, 3 , 5 , 7 , 8 , 10].includes(dob[1])) {
+            if (dob[0] >= 1 && dob[0] <= 31) {
+                return true;
+            } else {
+                alert('INVALID: Month selected can\'t have < 1 day or > 31 days');
+                return false;
+            }
+        }
+        else if(dob[1] === 2) {
+            if(dob[0] >= 1 && dob[0] <= 28) {
+                return true;
+            }
+            else {
+                alert('INVALID: Month selected can\'t have < 1 day or > 28 days');
+                return false;
+            }
+        }
     }
     else {
-        return dobIsValid = false + alert('Date of Birth is Not Valid');
+        alert('INVALID: Date of Birth is invalid');
+        return false;
     }
 
 }
-
 
 // Validate if client Gender is valid
 const genderValidator = () => {
     const dob = getClientGender();
 
     if(gender != null) {
-        return genderIsValid = true;
+        return true;
     }
     else {
-        return genderIsValid = false + alert('Gender is Not Valid');  
+        alert('Gender is Not Valid');
+        return false;  
     }
 }
 
-
 // Checks if both DOB and Gender are valid
 const clientInfoValidator = () => {
-    dobValidator();
-    genderValidator();
+    const dobIsValid = dobValidator();
+    const genderIsValid = genderValidator();
 
     if(dobIsValid === true && genderIsValid === true) {
-        return infoIsValid = true + console.log('Info is Valid');
+        console.log('Info is Valid');
+        return true;
     }
     else {
-        return infoIsValid = false;
+        return false;
     }
 }
 
