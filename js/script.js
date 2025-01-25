@@ -1,7 +1,21 @@
-// onSubmit
-
 // Create Akan name dicts / object for each gender - Day of the week index(key) : Akan name (value)
+
+// Listen for submit button - onSubmit , Event Listeners
+const submitForm = document.getElementById('submit_button')
+
+submitForm.addEventListener('click', getClientDob)
+
 // Get client DOB - document.get....value
+function getClientDob () {
+    const day = document.getElementById('day').value
+    const month = document.getElementById('month').value
+    const year = document.getElementById('year').value
+console.log(day);
+console.log(month);
+console.log(year);
+};
+
+getClientDob();
 // Get Client Gender - document.get....value
 
 // Validate if client DOB is valid - Use JavaScript Operators such as '===' and '<='
