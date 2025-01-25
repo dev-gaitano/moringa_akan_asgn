@@ -1,4 +1,6 @@
-# Akan Name Generator
+<div align="center">
+    <h1>Akan Name Generator</h1>
+</div>
 
 <div align="center">
     <h2>Author</h2>
