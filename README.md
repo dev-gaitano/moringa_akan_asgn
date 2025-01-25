@@ -9,7 +9,13 @@
   Eugene Campbell Gaitano - Fullstack Developer
 </div>
 <div align="center">
-    <img src="https://img.shields.io/badge/contact-grey" alt="conatct_static_img">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
+</div>
+<div align="center">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
+</div>
+<div align="center">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
 </div>
 
 ## Description
