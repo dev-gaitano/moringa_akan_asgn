@@ -11,8 +11,12 @@
     <img alt="Contact Badge" src="https://img.shields.io/badge/Contanct_me_through-grey">
 </div>
 <div align="center" style="margin-top: 8px;">
-    <img alt="LinkedIn Badge" src="https://img.shields.io/badge/LinkedIn-blue">
-    <img alt="Email Badge" src="https://img.shields.io/badge/Email-red">
+    <a href="https://www.linkedin.com/in/eugene-gaitano/" target="_blank">
+        <img alt="LinkedIn Badge" src="https://img.shields.io/badge/LinkedIn-blue">
+    </a>
+    <a href="mailto:dev.gaitano@gmail.com" target="_blank">
+        <img alt="Email Badge" src="https://img.shields.io/badge/Email-red">
+    </a>
 </div>
 
 ## Description
