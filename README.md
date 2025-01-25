@@ -4,6 +4,12 @@
 
 Eugene Campbell Gaitano - Fullstack Developer
 
+![Static Badge](https://img.shields.io/badge/contact-grey)
+
+<div align="center">
+  This text is centered.
+</div>
+
 ## Description
 
 A web application that generates Akan names based on the user's date of birth and gender. Akan names are derived from Ghanian culture. Frequently in
