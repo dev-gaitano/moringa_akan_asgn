@@ -1,5 +1,9 @@
 # Akan Name Generator
 
+## Author
+
+Eugene Campbell Gaitano - Fullstack Developer
+
 ## Description
 
 A web application that generates Akan names based on the user's date of birth and gender. Akan names are derived from Ghanian culture. Frequently in
