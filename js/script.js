@@ -102,35 +102,74 @@ const clientInfoValidator = () => {
 
 // Calculate DOB's Day Of The Week - Formula in the canva assignment documentation, get as Index
 const calculateDayofWeek = () => {
-  const clientInfoIsValid = clientInfoValidator();
+  const dob = getClientDob();
 
-  if (clientInfoIsValid === true) {
-    const dob = getClientDob();
-    //  CC - is the century digit
-    const CC = Math.floor(dob[2] / 100);
-    //  YY - is the Year digits
-    const YY = dob[2] % 100;
-    //  MM -  is the Month
-    const MM = dob[1];
-    //  DD - is the Day of the month
-    const DD = dob[0];
+  //  CC - is the century digit
+  const CC = Math.floor(dob[2] / 100);
+  //  YY - is the Year digits
+  const YY = dob[2] % 100;
+  //  MM -  is the Month
+  const MM = dob[1];
+  //  DD - is the Day of the month
+  const DD = dob[0];
 
-    // Calculates day of the week using canva formula:
-    const dayOfWeekCalc =
-      (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
+  // Calculate and return day of the week as index between 0-6
+  const dayOfWeekCalc =
+    (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
 
-    // Return day of the week as index between 0-6
-    const dayOfWeek = Math.floor(((dayOfWeekCalc % 7) + 7) % 7);
+  //   const dayOfWeek = Math.floor(((dayOfWeekCalc % 7) + 7) % 7);
 
-    console.log(dayOfWeek);
+  return Math.floor(((dayOfWeekCalc % 7) + 7) % 7);
+};
+
+// Select the Day of the week equal to our Clients Day of the week in dict - Use index calculated, validate if index is positive using modular operator
+const genClientAkanName = () => {
+  const gender = getClientGender();
+  dayOfWeek = calculateDayofWeek();
+
+  // Check if the Client is Male or Female and select dict / object  based on gender - if male , else female
+  if (gender === "male") {
+    if (dayOfWeek === 0) {
+      return akanNamesMale[0];
+    } else if (dayOfWeek === 1) {
+      return akanNamesMale[1];
+    } else if (dayOfWeek === 2) {
+      return akanNamesMale[2];
+    } else if (dayOfWeek === 3) {
+      return akanNamesMale[3];
+    } else if (dayOfWeek === 4) {
+      return akanNamesMale[4];
+    } else if (dayOfWeek === 5) {
+      return akanNamesMale[5];
+    } else if (dayOfWeek === 6) {
+      return akanNamesMale[6];
+    } else {
+      alert("ERROR");
+    }
+  } else if (gender === "female") {
+    if (dayOfWeek === 0) {
+      return akanNamesFemale[0];
+    } else if (dayOfWeek === 1) {
+      return akanNamesFemale[1];
+    } else if (dayOfWeek === 2) {
+      return akanNamesFemale[2];
+    } else if (dayOfWeek === 3) {
+      return akanNamesFemale[3];
+    } else if (dayOfWeek === 4) {
+      return akanNamesFemale[4];
+    } else if (dayOfWeek === 5) {
+      return akanNamesFemale[5];
+    } else if (dayOfWeek === 6) {
+      return akanNamesFemale[6];
+    } else {
+      alert("ERROR");
+    }
   }
 };
+
+// Return the corresponding key to the day of the week in the selected dict - Define a function to return the data to the client, the Akan name
 
 // Listen for submit button
 const submitForm = document
   .getElementById("submit_button")
   .addEventListener("click", calculateDayofWeek);
-
-// Check if the Client is Male or Female and select dict / object  based on gender - if male , else female
-// Select the Day of the week equal to our Clients Day of the week in dict - Use index calculated, validate if index is positive using modular operator
-// Return the corresponding key to the day of the week in the selected dict - Define a function to return the data to the client, the Akan name
