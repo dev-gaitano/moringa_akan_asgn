@@ -93,7 +93,7 @@ const clientInfoValidator = () => {
   const genderIsValid = genderValidator();
 
   if (dobIsValid === true && genderIsValid === true) {
-    console.log("ERROR: Info is Valid");
+    console.log("SUCCESS: Info is Valid");
     return true;
   } else {
     return false;
@@ -173,10 +173,10 @@ const returnClientAkanName = () => {
   const clientInfoIsValid = clientInfoValidator();
 
   if (clientInfoIsValid === true) {
-    calculateDayofWeek();
     const akanName = genClientAkanName();
 
     console.log(akanName);
+    alert("SUCCESS: Your Akan Name is " + akanName);
   } else {
     console.log("ERROR: Client Info is not valid");
   }
