@@ -54,7 +54,7 @@ const dobValidator = () => {
         alert("INVALID: Month selected can't have < 1 day or > 30 days");
         return false;
       }
-    } else if ([1, 3, 5, 7, 8, 10].includes(dob[1])) {
+    } else if ([1, 3, 5, 7, 8, 10, 12].includes(dob[1])) {
       if (dob[0] >= 1 && dob[0] <= 31) {
         return true;
       } else {
@@ -100,24 +100,36 @@ const clientInfoValidator = () => {
   }
 };
 
+// Calculate DOB's Day Of The Week - Formula in the canva assignment documentation, get as Index
+const calculateDayofWeek = () => {
+  const clientInfoIsValid = clientInfoValidator();
+
+  if (clientInfoIsValid === true) {
+    const dob = getClientDob();
+    //  CC - is the century digit
+    const CC = Math.floor(dob[2] / 100);
+    //  YY - is the Year digits
+    const YY = dob[2] % 100;
+    //  MM -  is the Month
+    const MM = dob[1];
+    //  DD - is the Day of the month
+    const DD = dob[0];
+
+    // Calculates day of the week using canva formula:
+    const dayOfWeekCalc =
+      (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
+
+    // Return day of the week as index between 0-6
+    const dayOfWeek = Math.floor(((dayOfWeekCalc % 7) + 7) % 7);
+
+    console.log(dayOfWeek);
+  }
+};
+
 // Listen for submit button
 const submitForm = document
   .getElementById("submit_button")
-  .addEventListener("click", clientInfoValidator);
-
-// Calculate DOB's Day Of The Week - Formula in the canva assignment documentation, get as Index
-
-// Takes DOB data from 'getClientDob':
-//  CC - is the century digits. For example 1989 has CC = 19
-//  YY - is the Year digits (1989 has YY = 89)
-//  MM -  is the Month
-//  DD - is the Day of the month
-//  mod - is the modulus function ( % )
-
-// Calculates day of the week using canva formula:
-// Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
-
-// Return day of the week as index
+  .addEventListener("click", calculateDayofWeek);
 
 // Check if the Client is Male or Female and select dict / object  based on gender - if male , else female
 // Select the Day of the week equal to our Clients Day of the week in dict - Use index calculated, validate if index is positive using modular operator
