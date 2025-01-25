@@ -64,6 +64,6 @@ Open the `index.html` file in a web browser. No additional installations are req
 
 ## License
 
-Project by Eugene Campbell Gaitano.
+Copyright (c) 2025 Eugene Campbell Gaitano
 
 This project is licensed under the [MIT License](./LICENSE.md).
