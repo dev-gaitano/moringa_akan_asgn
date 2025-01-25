@@ -2,13 +2,11 @@
 
 ## Author
 
-Eugene Campbell Gaitano - Fullstack Developer
+<div align="center">
+  # Eugene Campbell Gaitano - Fullstack Developer
+</div>
 
 ![Static Badge](https://img.shields.io/badge/contact-grey)
-
-<div align="center">
-  This text is centered.
-</div>
 
 ## Description
 
