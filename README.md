@@ -20,16 +20,14 @@ Figma Design File: [Figma Akan Name Generator](https://www.figma.com/design/WsYF
 
 ### 1. Clone the Repository:
 
-```
-bash
+```bash
 
 git clone https://github.com/dev-gaitano/moringa_akan_asgn.git
 ```
 
 ### 2. Navigate to the Project Directory:
 
-```
-bash
+```bash
 
 cd moringa_akan_asgn
 ```
