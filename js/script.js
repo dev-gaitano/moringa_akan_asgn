@@ -1,11 +1,12 @@
 // Reload page when reload button is clicked
-// Select Button element , Listen for click , Run reload function
+// Select reload Button element , Listen for click , Run reload function
 const reloadButton = document
   .getElementById("reload_button")
   .addEventListener("click", () => {
     location.reload();
   });
 
+// Generate Akan Name based on Client Input
 // Create Akan name dicts / object for each gender - Day of the week index(key) : Akan name (value)
 const akanNamesMale = [
   "Kwasi",
@@ -83,7 +84,7 @@ const dobValidator = () => {
   }
 };
 
-// Validate if client Gender is valid
+// Validate if client Gender is valid - Is not empty
 const genderValidator = () => {
   const dob = getClientGender();
 
@@ -108,7 +109,7 @@ const clientInfoValidator = () => {
   }
 };
 
-// Calculate DOB's Day Of The Week - Formula in the canva assignment documentation, get as Index
+// Calculate DOB's Day Of The Week , Return as Index
 const calculateDayofWeek = () => {
   const dob = getClientDob();
 
@@ -190,7 +191,7 @@ const returnClientAkanName = () => {
   }
 };
 
-// Listen for submit button
+// Selsct submit button , Listen for click , Run Akan Name funtion
 const submitForm = document
   .getElementById("submit_button")
   .addEventListener("click", returnClientAkanName);
