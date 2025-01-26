@@ -1,3 +1,11 @@
+// Reload page when reload button is clicked
+// Select Button element , Listen for click , Run reload function
+const reloadButton = document
+  .getElementById("reload_button")
+  .addEventListener("click", () => {
+    location.reload();
+  });
+
 // Create Akan name dicts / object for each gender - Day of the week index(key) : Akan name (value)
 const akanNamesMale = [
   "Kwasi",
@@ -168,7 +176,7 @@ const genClientAkanName = () => {
   }
 };
 
-// Return the corresponding key to the day of the week in the selected dict - Define a function to return the data to the client, the Akan name
+// Return the corresponding key to the day of the week in the selected dict
 const returnClientAkanName = () => {
   const clientInfoIsValid = clientInfoValidator();
 
